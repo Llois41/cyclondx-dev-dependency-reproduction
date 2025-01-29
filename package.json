@@ -1,0 +1,13 @@
+{
+  "name": "cyclondx-dev-dependency-reproduction",
+  "packageManager": "yarn@4.5.3",
+  "workspaces": {
+    "packages": [
+      "package1",
+      "package2"
+    ]
+  },
+  "devDependencies": {
+    "@cyclonedx/yarn-plugin-cyclonedx": "2.0.0"
+  }
+}

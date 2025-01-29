@@ -1,0 +1,83 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "serialNumber": "urn:uuid:7c0f2d27-f9c5-4f78-b3b0-b8bb1acaf0fd",
+  "metadata": {
+    "timestamp": "2025-01-29T09:23:18.730Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "yarn",
+          "version": "4.5.3"
+        },
+        {
+          "type": "library",
+          "name": "yarn-plugin-cyclonedx",
+          "group": "@cyclonedx",
+          "version": "2.0.0",
+          "author": "Jan Kowalleck",
+          "description": "Create CycloneDX Software Bill of Materials (SBOM) from yarn projects.",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-node-yarn.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-yarn#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "cyclonedx-library",
+          "group": "@cyclonedx",
+          "version": "7.1.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "cyclondx-dev-dependency-reproduction",
+      "bom-ref": "cyclondx-dev-dependency-reproduction@workspace:.",
+      "purl": "pkg:npm/cyclondx-dev-dependency-reproduction"
+    }
+  },
+  "components": [],
+  "dependencies": [
+    {
+      "ref": "cyclondx-dev-dependency-reproduction@workspace:."
+    }
+  ]
+}
