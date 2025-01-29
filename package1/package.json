@@ -1,0 +1,10 @@
+{
+  "name": "package1",
+  "version": "0.0.1",
+  "devDependencies": {
+    "typescript": "5.7.3"
+  },
+  "dependencies": {
+    "package2": "workspace:*"
+  }
+}
