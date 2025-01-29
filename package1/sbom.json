@@ -1,0 +1,3639 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "serialNumber": "urn:uuid:6fa9c34c-91b2-436f-9bde-4c5440087fa8",
+  "metadata": {
+    "timestamp": "2025-01-29T09:58:56.434Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "yarn",
+          "version": "4.5.3"
+        },
+        {
+          "type": "library",
+          "name": "yarn-plugin-cyclonedx",
+          "group": "@cyclonedx",
+          "version": "2.0.0",
+          "author": "Jan Kowalleck",
+          "description": "Create CycloneDX Software Bill of Materials (SBOM) from yarn projects.",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "git+https://github.com/CycloneDX/cyclonedx-node-yarn.git",
+              "type": "vcs",
+              "comment": "as detected from PackageJson property \"repository.url\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-yarn#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            },
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues",
+              "type": "issue-tracker",
+              "comment": "as detected from PackageJson property \"bugs.url\""
+            }
+          ]
+        },
+        {
+          "type": "library",
+          "name": "cyclonedx-library",
+          "group": "@cyclonedx",
+          "version": "7.1.0",
+          "licenses": [
+            {
+              "license": {
+                "id": "Apache-2.0"
+              }
+            }
+          ],
+          "externalReferences": [
+            {
+              "url": "https://github.com/CycloneDX/cyclonedx-javascript-library#readme",
+              "type": "website",
+              "comment": "as detected from PackageJson property \"homepage\""
+            }
+          ]
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "package1",
+      "version": "0.0.1",
+      "bom-ref": "package1@workspace:package1",
+      "purl": "pkg:npm/package1@0.0.1"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "package2",
+      "version": "0.0.1",
+      "bom-ref": "package2@workspace:package2",
+      "purl": "pkg:npm/package2@0.0.1"
+    },
+    {
+      "type": "library",
+      "name": "is-even",
+      "version": "1.0.0",
+      "bom-ref": "is-even@npm:1.0.0",
+      "author": "Jon Schlinkert",
+      "description": "Return true if the given number is even.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-even@1.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjonschlinkert%2Fis-even.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/is-even.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-even",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-even/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint",
+      "version": "9.19.0",
+      "bom-ref": "eslint@npm:9.19.0 [9b2e5]",
+      "author": "Nicholas C. Zakas",
+      "description": "An AST-based pattern checker for JavaScript.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/eslint@9.19.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/eslint.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://eslint.org",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/eslint/issues/",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "regexpp",
+      "group": "@eslint-community",
+      "version": "4.12.1",
+      "bom-ref": "@eslint-community/regexpp@npm:4.12.1",
+      "author": "Toru Nagashima",
+      "description": "Regular expression parser for ECMAScript.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint-community/regexpp@4.12.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint-community%2Fregexpp.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint-community/regexpp.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint-community/regexpp#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint-community/regexpp/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "config-array",
+      "group": "@eslint",
+      "version": "0.19.1",
+      "bom-ref": "@eslint/config-array@npm:0.19.1",
+      "author": "Nicholas C. Zakas",
+      "description": "General purpose glob-based configuration matching.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint/config-array@0.19.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Frewrite.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/rewrite.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "core",
+      "group": "@eslint",
+      "version": "0.10.0",
+      "bom-ref": "@eslint/core@npm:0.10.0",
+      "author": "Nicholas C. Zakas",
+      "description": "Runtime-agnostic core of ESLint",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint/core@0.10.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Frewrite.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/rewrite.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslintrc",
+      "group": "@eslint",
+      "version": "3.2.0",
+      "bom-ref": "@eslint/eslintrc@npm:3.2.0",
+      "author": "Nicholas C. Zakas",
+      "description": "The legacy ESLintRC config file format for ESLint",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint/eslintrc@3.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslintrc.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/eslintrc.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/eslintrc#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/eslintrc/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "js",
+      "group": "@eslint",
+      "version": "9.19.0",
+      "bom-ref": "@eslint/js@npm:9.19.0",
+      "description": "ESLint JavaScript language implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint/js@9.19.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint.git#packages/js",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/eslint.git#packages/js",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://eslint.org",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/eslint/issues/",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "plugin-kit",
+      "group": "@eslint",
+      "version": "0.2.5",
+      "bom-ref": "@eslint/plugin-kit@npm:0.2.5",
+      "author": "Nicholas C. Zakas",
+      "description": "Utilities for building ESLint plugins.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint/plugin-kit@0.2.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Frewrite.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/rewrite.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "node",
+      "group": "@humanfs",
+      "version": "0.16.6",
+      "bom-ref": "@humanfs/node@npm:0.16.6",
+      "author": "Nicholas C. Zakas",
+      "description": "The Node.js bindings of the humanfs library.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40humanfs/node@0.16.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fhumanwhocodes%2Fhumanfs.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/humanwhocodes/humanfs.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/humanfs#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/humanfs/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "module-importer",
+      "group": "@humanwhocodes",
+      "version": "1.0.1",
+      "bom-ref": "@humanwhocodes/module-importer@npm:1.0.1",
+      "author": "Nicholas C. Zaks",
+      "description": "Universal module importer for Node.js",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40humanwhocodes/module-importer@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fhumanwhocodes%2Fmodule-importer.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/humanwhocodes/module-importer.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/module-importer#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/module-importer/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "retry",
+      "group": "@humanwhocodes",
+      "version": "0.4.1",
+      "bom-ref": "@humanwhocodes/retry@npm:0.4.1",
+      "author": "Nicholas C. Zaks",
+      "description": "A utility to retry failed async methods.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40humanwhocodes/retry@0.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fhumanwhocodes%2Fretry.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/humanwhocodes/retry.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/retry#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/retry/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "estree",
+      "group": "@types",
+      "version": "1.0.6",
+      "bom-ref": "@types/estree@npm:1.0.6",
+      "description": "TypeScript definitions for estree",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40types/estree@1.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FDefinitelyTyped%2FDefinitelyTyped.git#types/estree",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/estree",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/estree",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "json-schema",
+      "group": "@types",
+      "version": "7.0.15",
+      "bom-ref": "@types/json-schema@npm:7.0.15",
+      "description": "TypeScript definitions for json-schema",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40types/json-schema@7.0.15?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FDefinitelyTyped%2FDefinitelyTyped.git#types/json-schema",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git#types/json-schema",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\" and \"repository.directory\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/json-schema",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ajv",
+      "version": "6.12.6",
+      "bom-ref": "ajv@npm:6.12.6",
+      "author": "Evgeny Poberezkin",
+      "description": "Another JSON Schema Validator",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ajv@6.12.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fajv-validator%2Fajv.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/ajv-validator/ajv.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/ajv-validator/ajv",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/ajv-validator/ajv/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "chalk",
+      "version": "4.1.2",
+      "bom-ref": "chalk@npm:4.1.2",
+      "description": "Terminal string styling done right",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/chalk@4.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fchalk%2Fchalk.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/chalk/chalk.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/chalk#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/chalk/chalk/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "bom-ref": "cross-spawn@npm:7.0.6",
+      "author": "André Cruz",
+      "description": "Cross platform child_process#spawn and child_process#spawnSync",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/cross-spawn@7.0.6?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fmoxystudio%2Fnode-cross-spawn.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/moxystudio/node-cross-spawn.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/moxystudio/node-cross-spawn",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/moxystudio/node-cross-spawn/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "escape-string-regexp",
+      "version": "4.0.0",
+      "bom-ref": "escape-string-regexp@npm:4.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Escape RegExp special characters",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/escape-string-regexp@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fescape-string-regexp.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/escape-string-regexp.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/escape-string-regexp#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/escape-string-regexp/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint-scope",
+      "version": "8.2.0",
+      "bom-ref": "eslint-scope@npm:8.2.0",
+      "description": "ECMAScript scope analyzer for ESLint",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/eslint-scope@8.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Fjs.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/js/blob/main/packages/eslint-scope/README.md",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint-visitor-keys",
+      "version": "4.2.0",
+      "bom-ref": "eslint-visitor-keys@npm:4.2.0",
+      "author": "Toru Nagashima",
+      "description": "Constants and utilities about visitor keys to traverse AST.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/eslint-visitor-keys@4.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Fjs.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/js/blob/main/packages/eslint-visitor-keys/README.md",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "espree",
+      "version": "10.3.0",
+      "bom-ref": "espree@npm:10.3.0",
+      "author": "Nicholas C. Zakas",
+      "description": "An Esprima-compatible JavaScript parser built on Acorn",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/espree@10.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Fjs.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/js/blob/main/packages/espree/README.md",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "esquery",
+      "version": "1.6.0",
+      "bom-ref": "esquery@npm:1.6.0",
+      "author": "Joel Feenstra",
+      "description": "A query library for ECMAScript AST using a CSS selector like query language.",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/esquery@1.6.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Festools%2Fesquery.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/estools/esquery.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/estools/esquery/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/estools/esquery/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "esutils",
+      "version": "2.0.3",
+      "bom-ref": "esutils@npm:2.0.3",
+      "description": "utility box for ECMAScript language tools",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/esutils@2.0.3?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Festools%2Fesutils.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/estools/esutils.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/estools/esutils",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/estools/esutils/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "bom-ref": "fast-deep-equal@npm:3.1.3",
+      "author": "Evgeny Poberezkin",
+      "description": "Fast deep equal",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fast-deep-equal@3.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fepoberezkin%2Ffast-deep-equal.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/epoberezkin/fast-deep-equal.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/epoberezkin/fast-deep-equal#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/epoberezkin/fast-deep-equal/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "file-entry-cache",
+      "version": "8.0.0",
+      "bom-ref": "file-entry-cache@npm:8.0.0",
+      "author": "Jared Wray",
+      "description": "Super simple cache for file metadata, useful for process that work o a given series of files and that only need to repeat the job on the changed ones since the previous run of the process",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/file-entry-cache@8.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjaredwray%2Ffile-entry-cache.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jaredwray/file-entry-cache.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jaredwray/file-entry-cache#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jaredwray/file-entry-cache/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "find-up",
+      "version": "5.0.0",
+      "bom-ref": "find-up@npm:5.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Find a file or directory by walking up parent directories",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/find-up@5.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Ffind-up.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/find-up.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/find-up#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/find-up/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "glob-parent",
+      "version": "6.0.2",
+      "bom-ref": "glob-parent@npm:6.0.2",
+      "author": "Gulp Team",
+      "description": "Extract the non-magic parent path from a glob string.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/glob-parent@6.0.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fgulpjs%2Fglob-parent.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/gulpjs/glob-parent.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/gulpjs/glob-parent#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/gulpjs/glob-parent/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ignore",
+      "version": "5.3.2",
+      "bom-ref": "ignore@npm:5.3.2",
+      "author": "kael",
+      "description": "Ignore is a manager and filter for .gitignore rules, the one used by eslint, gitbook and many others.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ignore@5.3.2?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fkaelzhang%2Fnode-ignore.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/kaelzhang/node-ignore.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/kaelzhang/node-ignore#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/kaelzhang/node-ignore/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "bom-ref": "imurmurhash@npm:0.1.4",
+      "author": "Jens Taylor",
+      "description": "An incremental implementation of MurmurHash3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/imurmurhash@0.1.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjensyt%2Fimurmurhash-js.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jensyt/imurmurhash-js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jensyt/imurmurhash-js",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jensyt/imurmurhash-js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "bom-ref": "is-glob@npm:4.0.3",
+      "author": "Jon Schlinkert",
+      "description": "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a better user experience.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-glob@4.0.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmicromatch%2Fis-glob.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/micromatch/is-glob.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/micromatch/is-glob",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/micromatch/is-glob/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "json-stable-stringify-without-jsonify",
+      "version": "1.0.1",
+      "bom-ref": "json-stable-stringify-without-jsonify@npm:1.0.1",
+      "author": "James Halliday",
+      "description": "deterministic JSON.stringify() with custom sorting to get deterministic hashes from stringified results, with no public domain dependencies",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/json-stable-stringify-without-jsonify@1.0.1?vcs_url=git%3A%2F%2Fgithub.com%2Fsamn%2Fjson-stable-stringify.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/samn/json-stable-stringify.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/samn/json-stable-stringify",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/samn/json-stable-stringify/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "lodash.merge",
+      "version": "4.6.2",
+      "bom-ref": "lodash.merge@npm:4.6.2",
+      "author": "John-David Dalton",
+      "description": "The Lodash method `_.merge` exported as a module.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/lodash.merge@4.6.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Flodash%2Flodash.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/lodash/lodash.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://lodash.com/",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/lodash/lodash/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "minimatch",
+      "version": "3.1.2",
+      "bom-ref": "minimatch@npm:3.1.2",
+      "author": "Isaac Z. Schlueter",
+      "description": "a glob matcher in javascript",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/minimatch@3.1.2?vcs_url=git%3A%2F%2Fgithub.com%2Fisaacs%2Fminimatch.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/isaacs/minimatch.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/minimatch#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/isaacs/minimatch/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "bom-ref": "natural-compare@npm:1.4.0",
+      "author": "Lauri Rooden",
+      "description": "Compare strings containing a mix of letters and numbers in the way a human being would in sort order.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/natural-compare@1.4.0?vcs_url=git%3A%2F%2Fgithub.com%2Flitejs%2Fnatural-compare-lite.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/litejs/natural-compare-lite.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/litejs/natural-compare-lite#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/litejs/natural-compare-lite/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "optionator",
+      "version": "0.9.4",
+      "bom-ref": "optionator@npm:0.9.4",
+      "author": "George Zahariev",
+      "description": "option parsing and help generation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/optionator@0.9.4?vcs_url=git%3A%2F%2Fgithub.com%2Fgkz%2Foptionator.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/gkz/optionator.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/gkz/optionator",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/gkz/optionator/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint-utils",
+      "group": "@eslint-community",
+      "version": "4.4.1",
+      "bom-ref": "@eslint-community/eslint-utils@npm:4.4.1 [3d186]",
+      "author": "Toru Nagashima",
+      "description": "Utilities for ESLint plugins.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint-community/eslint-utils@4.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint-community%2Feslint-utils.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint-community/eslint-utils.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint-community/eslint-utils#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint-community/eslint-utils/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "debug",
+      "version": "4.4.0",
+      "bom-ref": "debug@npm:4.4.0 [29852]",
+      "author": "Josh Junon",
+      "description": "Lightweight debugging utility for Node.js and the browser",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/debug@4.4.0?vcs_url=git%3A%2F%2Fgithub.com%2Fdebug-js%2Fdebug.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/debug-js/debug.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/debug-js/debug#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/debug-js/debug/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ms",
+      "version": "2.1.3",
+      "bom-ref": "ms@npm:2.1.3",
+      "description": "Tiny millisecond conversion utility",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ms@2.1.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fvercel%2Fms.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/vercel/ms.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/vercel/ms#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/vercel/ms/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint-visitor-keys",
+      "version": "3.4.3",
+      "bom-ref": "eslint-visitor-keys@npm:3.4.3",
+      "author": "Toru Nagashima",
+      "description": "Constants and utilities about visitor keys to traverse AST.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/eslint-visitor-keys@3.4.3?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Feslint-visitor-keys.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/eslint-visitor-keys.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/eslint-visitor-keys#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/eslint-visitor-keys/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "deep-is",
+      "version": "0.1.4",
+      "bom-ref": "deep-is@npm:0.1.4",
+      "author": "Thorsten Lorenz",
+      "description": "node's assert.deepEqual algorithm except for NaN being equal to NaN",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/deep-is@0.1.4?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fthlorenz%2Fdeep-is.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/thlorenz/deep-is.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/thlorenz/deep-is#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/thlorenz/deep-is/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fast-levenshtein",
+      "version": "2.0.6",
+      "bom-ref": "fast-levenshtein@npm:2.0.6",
+      "author": "Ramesh Nair",
+      "description": "Efficient implementation of Levenshtein algorithm  with locale-specific collator support.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fast-levenshtein@2.0.6?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fhiddentao%2Ffast-levenshtein.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/hiddentao/fast-levenshtein.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/hiddentao/fast-levenshtein#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/hiddentao/fast-levenshtein/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "levn",
+      "version": "0.4.1",
+      "bom-ref": "levn@npm:0.4.1",
+      "author": "George Zahariev",
+      "description": "Light ECMAScript (JavaScript) Value Notation - human written, concise, typed, flexible",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/levn@0.4.1?vcs_url=git%3A%2F%2Fgithub.com%2Fgkz%2Flevn.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/gkz/levn.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/gkz/levn",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/gkz/levn/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "prelude-ls",
+      "version": "1.2.1",
+      "bom-ref": "prelude-ls@npm:1.2.1",
+      "author": "George Zahariev",
+      "description": "prelude.ls is a functionally oriented utility library. It is powerful and flexible. Almost all of its functions are curried. It is written in, and is the recommended base library for, LiveScript.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/prelude-ls@1.2.1?vcs_url=git%3A%2F%2Fgithub.com%2Fgkz%2Fprelude-ls.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/gkz/prelude-ls.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "http://preludels.com",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/gkz/prelude-ls/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "type-check",
+      "version": "0.4.0",
+      "bom-ref": "type-check@npm:0.4.0",
+      "author": "George Zahariev",
+      "description": "type-check allows you to check the types of JavaScript values at runtime with a Haskell like type syntax.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/type-check@0.4.0?vcs_url=git%3A%2F%2Fgithub.com%2Fgkz%2Ftype-check.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/gkz/type-check.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/gkz/type-check",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/gkz/type-check/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "word-wrap",
+      "version": "1.2.5",
+      "bom-ref": "word-wrap@npm:1.2.5",
+      "author": "Jon Schlinkert",
+      "description": "Wrap words to a specified length.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/word-wrap@1.2.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjonschlinkert%2Fword-wrap.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/word-wrap.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/word-wrap",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/word-wrap/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "brace-expansion",
+      "version": "1.1.11",
+      "bom-ref": "brace-expansion@npm:1.1.11",
+      "author": "Julian Gruber",
+      "description": "Brace expansion as known from sh/bash",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/brace-expansion@1.1.11?vcs_url=git%3A%2F%2Fgithub.com%2Fjuliangruber%2Fbrace-expansion.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/juliangruber/brace-expansion.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/juliangruber/brace-expansion",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/juliangruber/brace-expansion/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "bom-ref": "balanced-match@npm:1.0.2",
+      "author": "Julian Gruber",
+      "description": "Match balanced character pairs, like \"{\" and \"}\"",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/balanced-match@1.0.2?vcs_url=git%3A%2F%2Fgithub.com%2Fjuliangruber%2Fbalanced-match.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/juliangruber/balanced-match.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/juliangruber/balanced-match",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/juliangruber/balanced-match/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "concat-map",
+      "version": "0.0.1",
+      "bom-ref": "concat-map@npm:0.0.1::__archiveUrl=https%3A%2F%2Fbahnhub.tech.rz.db.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fconcat-map%2F-%2Fconcat-map-0.0.1.tgz",
+      "author": "James Halliday",
+      "description": "concatenative mapdashery",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/concat-map@0.0.1?download_url=https%3A%2F%2Fbahnhub.tech.rz.db.de%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fconcat-map%2F-%2Fconcat-map-0.0.1.tgz",
+      "externalReferences": [
+        {
+          "url": "git://github.com/substack/node-concat-map.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/substack/node-concat-map#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/substack/node-concat-map/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://bahnhub.tech.rz.db.de/artifactory/api/npm/vendo-web-npm-3rdparty/concat-map/-/concat-map-0.0.1.tgz",
+          "type": "distribution",
+          "comment": "as detected from YarnLocator property \"reference::__archiveUrl\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "bom-ref": "is-extglob@npm:2.1.1",
+      "author": "Jon Schlinkert",
+      "description": "Returns true if a string has an extglob.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-extglob@2.1.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjonschlinkert%2Fis-extglob.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/is-extglob.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-extglob",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-extglob/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "locate-path",
+      "version": "6.0.0",
+      "bom-ref": "locate-path@npm:6.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Get the first path that exists on disk of multiple paths",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/locate-path@6.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Flocate-path.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/locate-path.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/locate-path#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/locate-path/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "path-exists",
+      "version": "4.0.0",
+      "bom-ref": "path-exists@npm:4.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Check if a path exists",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/path-exists@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fpath-exists.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/path-exists.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/path-exists#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/path-exists/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "p-locate",
+      "version": "5.0.0",
+      "bom-ref": "p-locate@npm:5.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Get the first fulfilled promise that satisfies the provided testing function",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/p-locate@5.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fp-locate.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/p-locate.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/p-locate#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/p-locate/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "p-limit",
+      "version": "3.1.0",
+      "bom-ref": "p-limit@npm:3.1.0",
+      "author": "Sindre Sorhus",
+      "description": "Run multiple promise-returning & async functions with limited concurrency",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/p-limit@3.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fp-limit.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/p-limit.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/p-limit#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/p-limit/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "yocto-queue",
+      "version": "0.1.0",
+      "bom-ref": "yocto-queue@npm:0.1.0",
+      "author": "Sindre Sorhus",
+      "description": "Tiny queue data structure",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/yocto-queue@0.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fyocto-queue.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/yocto-queue.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/yocto-queue#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/yocto-queue/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "flat-cache",
+      "version": "4.0.1",
+      "bom-ref": "flat-cache@npm:4.0.1",
+      "author": "Jared Wray",
+      "description": "A stupidly simple key/value storage using files to persist some data",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/flat-cache@4.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjaredwray%2Fflat-cache.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jaredwray/flat-cache.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jaredwray/flat-cache#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jaredwray/flat-cache/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "flatted",
+      "version": "3.3.2",
+      "bom-ref": "flatted@npm:3.3.2",
+      "author": "Andrea Giammarchi",
+      "description": "A super light and fast circular JSON parser.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/flatted@3.3.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FWebReflection%2Fflatted.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/WebReflection/flatted.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/WebReflection/flatted#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/WebReflection/flatted/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "keyv",
+      "version": "4.5.4",
+      "bom-ref": "keyv@npm:4.5.4",
+      "author": "Jared Wray",
+      "description": "Simple key-value storage with support for multiple backends",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/keyv@4.5.4?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjaredwray%2Fkeyv.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jaredwray/keyv.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jaredwray/keyv",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jaredwray/keyv/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "json-buffer",
+      "version": "3.0.1",
+      "bom-ref": "json-buffer@npm:3.0.1::__archiveUrl=https%3A%2F%2Fbahnhub.tech.rz.db.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fjson-buffer%2F-%2Fjson-buffer-3.0.1.tgz",
+      "author": "Dominic Tarr",
+      "description": "JSON parse & stringify that supports binary via bops & base64",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/json-buffer@3.0.1?download_url=https%3A%2F%2Fbahnhub.tech.rz.db.de%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fjson-buffer%2F-%2Fjson-buffer-3.0.1.tgz",
+      "externalReferences": [
+        {
+          "url": "git://github.com/dominictarr/json-buffer.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/dominictarr/json-buffer",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/dominictarr/json-buffer/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        },
+        {
+          "url": "https://bahnhub.tech.rz.db.de/artifactory/api/npm/vendo-web-npm-3rdparty/json-buffer/-/json-buffer-3.0.1.tgz",
+          "type": "distribution",
+          "comment": "as detected from YarnLocator property \"reference::__archiveUrl\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "estraverse",
+      "version": "5.3.0",
+      "bom-ref": "estraverse@npm:5.3.0",
+      "description": "ECMAScript JS AST traversal functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/estraverse@5.3.0?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Festools%2Festraverse.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/estools/estraverse.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/estools/estraverse",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/estools/estraverse/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "acorn",
+      "version": "8.14.0",
+      "bom-ref": "acorn@npm:8.14.0",
+      "description": "ECMAScript parser",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/acorn@8.14.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Facornjs%2Facorn.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/acornjs/acorn.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/acornjs/acorn",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/acornjs/acorn/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "acorn-jsx",
+      "version": "5.3.2",
+      "bom-ref": "acorn-jsx@npm:5.3.2 [e5b10]",
+      "description": "Modern, fast React.js JSX parser",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/acorn-jsx@5.3.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Facornjs%2Facorn-jsx.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/acornjs/acorn-jsx.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/acornjs/acorn-jsx",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/acornjs/acorn-jsx/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "bom-ref": "esrecurse@npm:4.3.0",
+      "description": "ECMAScript AST recursive visitor",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/esrecurse@4.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Festools%2Fesrecurse.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/estools/esrecurse.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/estools/esrecurse",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/estools/esrecurse/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "path-key",
+      "version": "3.1.1",
+      "bom-ref": "path-key@npm:3.1.1",
+      "author": "Sindre Sorhus",
+      "description": "Get the PATH environment variable key cross-platform",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/path-key@3.1.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fpath-key.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/path-key.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/path-key#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/path-key/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "bom-ref": "shebang-command@npm:2.0.0",
+      "author": "Kevin Mårtensson",
+      "description": "Get the command from a shebang",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/shebang-command@2.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fkevva%2Fshebang-command.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/kevva/shebang-command.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/kevva/shebang-command#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/kevva/shebang-command/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "which",
+      "version": "2.0.2",
+      "bom-ref": "which@npm:2.0.2",
+      "author": "Isaac Z. Schlueter",
+      "description": "Like which(1) unix command. Find the first instance of an executable in the PATH.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/which@2.0.2?vcs_url=git%3A%2F%2Fgithub.com%2Fisaacs%2Fnode-which.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/isaacs/node-which.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-which#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/isaacs/node-which/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "isexe",
+      "version": "2.0.0",
+      "bom-ref": "isexe@npm:2.0.0",
+      "author": "Isaac Z. Schlueter",
+      "description": "Minimal module to check if a file is executable.",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/isexe@2.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fisaacs%2Fisexe.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/isaacs/isexe.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/isaacs/isexe#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/isaacs/isexe/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "bom-ref": "shebang-regex@npm:3.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Regular expression for matching a shebang line",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/shebang-regex@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fshebang-regex.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/shebang-regex.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/shebang-regex#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/shebang-regex/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "ansi-styles",
+      "version": "4.3.0",
+      "bom-ref": "ansi-styles@npm:4.3.0",
+      "author": "Sindre Sorhus",
+      "description": "ANSI escape codes for styling strings in the terminal",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/ansi-styles@4.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fchalk%2Fansi-styles.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/chalk/ansi-styles.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/ansi-styles#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/chalk/ansi-styles/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "supports-color",
+      "version": "7.2.0",
+      "bom-ref": "supports-color@npm:7.2.0",
+      "author": "Sindre Sorhus",
+      "description": "Detect whether a terminal supports color",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/supports-color@7.2.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fchalk%2Fsupports-color.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/chalk/supports-color.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/chalk/supports-color#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/chalk/supports-color/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "has-flag",
+      "version": "4.0.0",
+      "bom-ref": "has-flag@npm:4.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Check if argv has a specific flag",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/has-flag@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fhas-flag.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/has-flag.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/has-flag#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/has-flag/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "color-convert",
+      "version": "2.0.1",
+      "bom-ref": "color-convert@npm:2.0.1",
+      "author": "Heather Arthur",
+      "description": "Plain color conversion functions",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-convert@2.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2FQix-%2Fcolor-convert.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/Qix-/color-convert.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/Qix-/color-convert#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/Qix-/color-convert/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "color-name",
+      "version": "1.1.4",
+      "bom-ref": "color-name@npm:1.1.4",
+      "author": "DY",
+      "description": "A list of color names and its values",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/color-name@1.1.4?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fcolorjs%2Fcolor-name.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/colorjs/color-name.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/colorjs/color-name",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/colorjs/color-name/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "fast-json-stable-stringify",
+      "version": "2.1.0",
+      "bom-ref": "fast-json-stable-stringify@npm:2.1.0",
+      "author": "James Halliday",
+      "description": "deterministic `JSON.stringify()` - a faster version of substack's json-stable-strigify without jsonify",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/fast-json-stable-stringify@2.1.0?vcs_url=git%3A%2F%2Fgithub.com%2Fepoberezkin%2Ffast-json-stable-stringify.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/epoberezkin/fast-json-stable-stringify.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/epoberezkin/fast-json-stable-stringify",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/epoberezkin/fast-json-stable-stringify/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "json-schema-traverse",
+      "version": "0.4.1",
+      "bom-ref": "json-schema-traverse@npm:0.4.1",
+      "author": "Evgeny Poberezkin",
+      "description": "Traverse JSON Schema passing each schema object to callback",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/json-schema-traverse@0.4.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fepoberezkin%2Fjson-schema-traverse.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/epoberezkin/json-schema-traverse.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/epoberezkin/json-schema-traverse#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/epoberezkin/json-schema-traverse/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "uri-js",
+      "version": "4.4.1",
+      "bom-ref": "uri-js@npm:4.4.1",
+      "author": "Gary Court",
+      "description": "An RFC 3986/3987 compliant, scheme extendable URI/IRI parsing/validating/resolving library for JavaScript.",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/uri-js@4.4.1?vcs_url=git%2Bssh%3A%2F%2Fgit%40github.com%2Fgarycourt%2Furi-js.git",
+      "externalReferences": [
+        {
+          "url": "git+ssh://git@github.com/garycourt/uri-js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/garycourt/uri-js",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/garycourt/uri-js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "punycode",
+      "version": "2.3.1",
+      "bom-ref": "punycode@npm:2.3.1",
+      "author": "Mathias Bynens",
+      "description": "A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and works on nearly all JavaScript platforms.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/punycode@2.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fmathiasbynens%2Fpunycode.js.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/mathiasbynens/punycode.js.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://mths.be/punycode",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/mathiasbynens/punycode.js/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "core",
+      "group": "@humanfs",
+      "version": "0.19.1",
+      "bom-ref": "@humanfs/core@npm:0.19.1",
+      "author": "Nicholas C. Zakas",
+      "description": "The core of the humanfs library.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40humanfs/core@0.19.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fhumanwhocodes%2Fhumanfs.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/humanwhocodes/humanfs.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/humanfs#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/humanfs/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "retry",
+      "group": "@humanwhocodes",
+      "version": "0.3.1",
+      "bom-ref": "@humanwhocodes/retry@npm:0.3.1",
+      "author": "Nicholas C. Zaks",
+      "description": "A utility to retry failed async methods.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40humanwhocodes/retry@0.3.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fhumanwhocodes%2Fretry.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/humanwhocodes/retry.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/retry#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/humanwhocodes/retry/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "globals",
+      "version": "14.0.0",
+      "bom-ref": "globals@npm:14.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Global identifiers from different JavaScript environments",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/globals@14.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fglobals.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/globals.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/globals#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/globals/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "import-fresh",
+      "version": "3.3.0",
+      "bom-ref": "import-fresh@npm:3.3.0",
+      "author": "Sindre Sorhus",
+      "description": "Import a module while bypassing the cache",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/import-fresh@3.3.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fimport-fresh.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/import-fresh.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/import-fresh#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/import-fresh/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "js-yaml",
+      "version": "4.1.0",
+      "bom-ref": "js-yaml@npm:4.1.0",
+      "author": "Vladimir Zapparov",
+      "description": "YAML 1.2 parser and serializer",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/js-yaml@4.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodeca%2Fjs-yaml.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/nodeca/js-yaml.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/nodeca/js-yaml#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/nodeca/js-yaml/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "strip-json-comments",
+      "version": "3.1.1",
+      "bom-ref": "strip-json-comments@npm:3.1.1",
+      "author": "Sindre Sorhus",
+      "description": "Strip comments from JSON. Lets you use comments in your JSON files!",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/strip-json-comments@3.1.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fstrip-json-comments.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/strip-json-comments.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/strip-json-comments#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/strip-json-comments/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "argparse",
+      "version": "2.0.1",
+      "bom-ref": "argparse@npm:2.0.1",
+      "description": "CLI arguments parser. Native port of python's argparse.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/argparse@2.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fnodeca%2Fargparse.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/nodeca/argparse.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/nodeca/argparse#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/nodeca/argparse/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "parent-module",
+      "version": "1.0.1",
+      "bom-ref": "parent-module@npm:1.0.1",
+      "author": "Sindre Sorhus",
+      "description": "Get the path of the parent module",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/parent-module@1.0.1?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fparent-module.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/parent-module.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/parent-module#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/parent-module/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "resolve-from",
+      "version": "4.0.0",
+      "bom-ref": "resolve-from@npm:4.0.0",
+      "author": "Sindre Sorhus",
+      "description": "Resolve the path of a module like `require.resolve()` but from a given path",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/resolve-from@4.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fresolve-from.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/resolve-from.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/resolve-from#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/resolve-from/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "callsites",
+      "version": "3.1.0",
+      "bom-ref": "callsites@npm:3.1.0",
+      "author": "Sindre Sorhus",
+      "description": "Get callsites from the V8 stack trace API",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/callsites@3.1.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fsindresorhus%2Fcallsites.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/sindresorhus/callsites.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/callsites#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/sindresorhus/callsites/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "object-schema",
+      "group": "@eslint",
+      "version": "2.1.5",
+      "bom-ref": "@eslint/object-schema@npm:2.1.5",
+      "author": "Nicholas C. Zakas",
+      "description": "An object schema merger/validator",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/%40eslint/object-schema@2.1.5?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Feslint%2Frewrite.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/eslint/rewrite.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/eslint/rewrite/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-odd",
+      "version": "0.1.2",
+      "bom-ref": "is-odd@npm:0.1.2",
+      "author": "Jon Schlinkert",
+      "description": "Returns true if the given number is odd.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-odd@0.1.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjonschlinkert%2Fis-odd.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/is-odd.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-odd",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-odd/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-number",
+      "version": "3.0.0",
+      "bom-ref": "is-number@npm:3.0.0",
+      "author": "Jon Schlinkert",
+      "description": "Returns true if the value is a number. comprehensive tests.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-number@3.0.0?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjonschlinkert%2Fis-number.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/is-number.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-number",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/is-number/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "kind-of",
+      "version": "3.2.2",
+      "bom-ref": "kind-of@npm:3.2.2",
+      "author": "Jon Schlinkert",
+      "description": "Get the native type of a value.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/kind-of@3.2.2?vcs_url=git%2Bhttps%3A%2F%2Fgithub.com%2Fjonschlinkert%2Fkind-of.git",
+      "externalReferences": [
+        {
+          "url": "git+https://github.com/jonschlinkert/kind-of.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/kind-of",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/jonschlinkert/kind-of/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "is-buffer",
+      "version": "1.1.6",
+      "bom-ref": "is-buffer@npm:1.1.6",
+      "author": "Feross Aboukhadijeh",
+      "description": "Determine if an object is a Buffer",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "acknowledgement": "declared"
+          }
+        }
+      ],
+      "purl": "pkg:npm/is-buffer@1.1.6?vcs_url=git%3A%2F%2Fgithub.com%2Ffeross%2Fis-buffer.git",
+      "externalReferences": [
+        {
+          "url": "git://github.com/feross/is-buffer.git",
+          "type": "vcs",
+          "comment": "as detected from PackageJson property \"repository.url\""
+        },
+        {
+          "url": "https://github.com/feross/is-buffer#readme",
+          "type": "website",
+          "comment": "as detected from PackageJson property \"homepage\""
+        },
+        {
+          "url": "https://github.com/feross/is-buffer/issues",
+          "type": "issue-tracker",
+          "comment": "as detected from PackageJson property \"bugs.url\""
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "package1@workspace:package1",
+      "dependsOn": [
+        "package2@workspace:package2"
+      ]
+    },
+    {
+      "ref": "package2@workspace:package2",
+      "dependsOn": [
+        "is-even@npm:1.0.0",
+        "eslint@npm:9.19.0 [9b2e5]"
+      ]
+    },
+    {
+      "ref": "is-even@npm:1.0.0",
+      "dependsOn": [
+        "is-odd@npm:0.1.2"
+      ]
+    },
+    {
+      "ref": "eslint@npm:9.19.0 [9b2e5]",
+      "dependsOn": [
+        "@eslint-community/regexpp@npm:4.12.1",
+        "@eslint/config-array@npm:0.19.1",
+        "@eslint/core@npm:0.10.0",
+        "@eslint/eslintrc@npm:3.2.0",
+        "@eslint/js@npm:9.19.0",
+        "@eslint/plugin-kit@npm:0.2.5",
+        "@humanfs/node@npm:0.16.6",
+        "@humanwhocodes/module-importer@npm:1.0.1",
+        "@humanwhocodes/retry@npm:0.4.1",
+        "@types/estree@npm:1.0.6",
+        "@types/json-schema@npm:7.0.15",
+        "ajv@npm:6.12.6",
+        "chalk@npm:4.1.2",
+        "cross-spawn@npm:7.0.6",
+        "escape-string-regexp@npm:4.0.0",
+        "eslint-scope@npm:8.2.0",
+        "eslint-visitor-keys@npm:4.2.0",
+        "espree@npm:10.3.0",
+        "esquery@npm:1.6.0",
+        "esutils@npm:2.0.3",
+        "fast-deep-equal@npm:3.1.3",
+        "file-entry-cache@npm:8.0.0",
+        "find-up@npm:5.0.0",
+        "glob-parent@npm:6.0.2",
+        "ignore@npm:5.3.2",
+        "imurmurhash@npm:0.1.4",
+        "is-glob@npm:4.0.3",
+        "json-stable-stringify-without-jsonify@npm:1.0.1",
+        "lodash.merge@npm:4.6.2",
+        "minimatch@npm:3.1.2",
+        "natural-compare@npm:1.4.0",
+        "optionator@npm:0.9.4",
+        "@eslint-community/eslint-utils@npm:4.4.1 [3d186]",
+        "debug@npm:4.4.0 [29852]"
+      ]
+    },
+    {
+      "ref": "@eslint-community/regexpp@npm:4.12.1"
+    },
+    {
+      "ref": "@eslint/config-array@npm:0.19.1",
+      "dependsOn": [
+        "@eslint/object-schema@npm:2.1.5",
+        "minimatch@npm:3.1.2",
+        "debug@npm:4.4.0 [29852]"
+      ]
+    },
+    {
+      "ref": "@eslint/core@npm:0.10.0",
+      "dependsOn": [
+        "@types/json-schema@npm:7.0.15"
+      ]
+    },
+    {
+      "ref": "@eslint/eslintrc@npm:3.2.0",
+      "dependsOn": [
+        "ajv@npm:6.12.6",
+        "espree@npm:10.3.0",
+        "globals@npm:14.0.0",
+        "ignore@npm:5.3.2",
+        "import-fresh@npm:3.3.0",
+        "js-yaml@npm:4.1.0",
+        "minimatch@npm:3.1.2",
+        "strip-json-comments@npm:3.1.1",
+        "debug@npm:4.4.0 [29852]"
+      ]
+    },
+    {
+      "ref": "@eslint/js@npm:9.19.0"
+    },
+    {
+      "ref": "@eslint/plugin-kit@npm:0.2.5",
+      "dependsOn": [
+        "@eslint/core@npm:0.10.0",
+        "levn@npm:0.4.1"
+      ]
+    },
+    {
+      "ref": "@humanfs/node@npm:0.16.6",
+      "dependsOn": [
+        "@humanfs/core@npm:0.19.1",
+        "@humanwhocodes/retry@npm:0.3.1"
+      ]
+    },
+    {
+      "ref": "@humanwhocodes/module-importer@npm:1.0.1"
+    },
+    {
+      "ref": "@humanwhocodes/retry@npm:0.4.1"
+    },
+    {
+      "ref": "@types/estree@npm:1.0.6"
+    },
+    {
+      "ref": "@types/json-schema@npm:7.0.15"
+    },
+    {
+      "ref": "ajv@npm:6.12.6",
+      "dependsOn": [
+        "fast-deep-equal@npm:3.1.3",
+        "fast-json-stable-stringify@npm:2.1.0",
+        "json-schema-traverse@npm:0.4.1",
+        "uri-js@npm:4.4.1"
+      ]
+    },
+    {
+      "ref": "chalk@npm:4.1.2",
+      "dependsOn": [
+        "ansi-styles@npm:4.3.0",
+        "supports-color@npm:7.2.0"
+      ]
+    },
+    {
+      "ref": "cross-spawn@npm:7.0.6",
+      "dependsOn": [
+        "path-key@npm:3.1.1",
+        "shebang-command@npm:2.0.0",
+        "which@npm:2.0.2"
+      ]
+    },
+    {
+      "ref": "escape-string-regexp@npm:4.0.0"
+    },
+    {
+      "ref": "eslint-scope@npm:8.2.0",
+      "dependsOn": [
+        "esrecurse@npm:4.3.0",
+        "estraverse@npm:5.3.0"
+      ]
+    },
+    {
+      "ref": "eslint-visitor-keys@npm:4.2.0"
+    },
+    {
+      "ref": "espree@npm:10.3.0",
+      "dependsOn": [
+        "acorn@npm:8.14.0",
+        "eslint-visitor-keys@npm:4.2.0",
+        "acorn-jsx@npm:5.3.2 [e5b10]"
+      ]
+    },
+    {
+      "ref": "esquery@npm:1.6.0",
+      "dependsOn": [
+        "estraverse@npm:5.3.0"
+      ]
+    },
+    {
+      "ref": "esutils@npm:2.0.3"
+    },
+    {
+      "ref": "fast-deep-equal@npm:3.1.3"
+    },
+    {
+      "ref": "file-entry-cache@npm:8.0.0",
+      "dependsOn": [
+        "flat-cache@npm:4.0.1"
+      ]
+    },
+    {
+      "ref": "find-up@npm:5.0.0",
+      "dependsOn": [
+        "locate-path@npm:6.0.0",
+        "path-exists@npm:4.0.0"
+      ]
+    },
+    {
+      "ref": "glob-parent@npm:6.0.2",
+      "dependsOn": [
+        "is-glob@npm:4.0.3"
+      ]
+    },
+    {
+      "ref": "ignore@npm:5.3.2"
+    },
+    {
+      "ref": "imurmurhash@npm:0.1.4"
+    },
+    {
+      "ref": "is-glob@npm:4.0.3",
+      "dependsOn": [
+        "is-extglob@npm:2.1.1"
+      ]
+    },
+    {
+      "ref": "json-stable-stringify-without-jsonify@npm:1.0.1"
+    },
+    {
+      "ref": "lodash.merge@npm:4.6.2"
+    },
+    {
+      "ref": "minimatch@npm:3.1.2",
+      "dependsOn": [
+        "brace-expansion@npm:1.1.11"
+      ]
+    },
+    {
+      "ref": "natural-compare@npm:1.4.0"
+    },
+    {
+      "ref": "optionator@npm:0.9.4",
+      "dependsOn": [
+        "deep-is@npm:0.1.4",
+        "fast-levenshtein@npm:2.0.6",
+        "levn@npm:0.4.1",
+        "prelude-ls@npm:1.2.1",
+        "type-check@npm:0.4.0",
+        "word-wrap@npm:1.2.5"
+      ]
+    },
+    {
+      "ref": "@eslint-community/eslint-utils@npm:4.4.1 [3d186]",
+      "dependsOn": [
+        "eslint@npm:9.19.0 [9b2e5]",
+        "eslint-visitor-keys@npm:3.4.3"
+      ]
+    },
+    {
+      "ref": "debug@npm:4.4.0 [29852]",
+      "dependsOn": [
+        "ms@npm:2.1.3"
+      ]
+    },
+    {
+      "ref": "ms@npm:2.1.3"
+    },
+    {
+      "ref": "eslint-visitor-keys@npm:3.4.3"
+    },
+    {
+      "ref": "deep-is@npm:0.1.4"
+    },
+    {
+      "ref": "fast-levenshtein@npm:2.0.6"
+    },
+    {
+      "ref": "levn@npm:0.4.1",
+      "dependsOn": [
+        "prelude-ls@npm:1.2.1",
+        "type-check@npm:0.4.0"
+      ]
+    },
+    {
+      "ref": "prelude-ls@npm:1.2.1"
+    },
+    {
+      "ref": "type-check@npm:0.4.0",
+      "dependsOn": [
+        "prelude-ls@npm:1.2.1"
+      ]
+    },
+    {
+      "ref": "word-wrap@npm:1.2.5"
+    },
+    {
+      "ref": "brace-expansion@npm:1.1.11",
+      "dependsOn": [
+        "balanced-match@npm:1.0.2",
+        "concat-map@npm:0.0.1::__archiveUrl=https%3A%2F%2Fbahnhub.tech.rz.db.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fconcat-map%2F-%2Fconcat-map-0.0.1.tgz"
+      ]
+    },
+    {
+      "ref": "balanced-match@npm:1.0.2"
+    },
+    {
+      "ref": "concat-map@npm:0.0.1::__archiveUrl=https%3A%2F%2Fbahnhub.tech.rz.db.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fconcat-map%2F-%2Fconcat-map-0.0.1.tgz"
+    },
+    {
+      "ref": "is-extglob@npm:2.1.1"
+    },
+    {
+      "ref": "locate-path@npm:6.0.0",
+      "dependsOn": [
+        "p-locate@npm:5.0.0"
+      ]
+    },
+    {
+      "ref": "path-exists@npm:4.0.0"
+    },
+    {
+      "ref": "p-locate@npm:5.0.0",
+      "dependsOn": [
+        "p-limit@npm:3.1.0"
+      ]
+    },
+    {
+      "ref": "p-limit@npm:3.1.0",
+      "dependsOn": [
+        "yocto-queue@npm:0.1.0"
+      ]
+    },
+    {
+      "ref": "yocto-queue@npm:0.1.0"
+    },
+    {
+      "ref": "flat-cache@npm:4.0.1",
+      "dependsOn": [
+        "flatted@npm:3.3.2",
+        "keyv@npm:4.5.4"
+      ]
+    },
+    {
+      "ref": "flatted@npm:3.3.2"
+    },
+    {
+      "ref": "keyv@npm:4.5.4",
+      "dependsOn": [
+        "json-buffer@npm:3.0.1::__archiveUrl=https%3A%2F%2Fbahnhub.tech.rz.db.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fjson-buffer%2F-%2Fjson-buffer-3.0.1.tgz"
+      ]
+    },
+    {
+      "ref": "json-buffer@npm:3.0.1::__archiveUrl=https%3A%2F%2Fbahnhub.tech.rz.db.de%3A443%2Fartifactory%2Fapi%2Fnpm%2Fvendo-web-npm-3rdparty%2Fjson-buffer%2F-%2Fjson-buffer-3.0.1.tgz"
+    },
+    {
+      "ref": "estraverse@npm:5.3.0"
+    },
+    {
+      "ref": "acorn@npm:8.14.0"
+    },
+    {
+      "ref": "acorn-jsx@npm:5.3.2 [e5b10]",
+      "dependsOn": [
+        "acorn@npm:8.14.0"
+      ]
+    },
+    {
+      "ref": "esrecurse@npm:4.3.0",
+      "dependsOn": [
+        "estraverse@npm:5.3.0"
+      ]
+    },
+    {
+      "ref": "path-key@npm:3.1.1"
+    },
+    {
+      "ref": "shebang-command@npm:2.0.0",
+      "dependsOn": [
+        "shebang-regex@npm:3.0.0"
+      ]
+    },
+    {
+      "ref": "which@npm:2.0.2",
+      "dependsOn": [
+        "isexe@npm:2.0.0"
+      ]
+    },
+    {
+      "ref": "isexe@npm:2.0.0"
+    },
+    {
+      "ref": "shebang-regex@npm:3.0.0"
+    },
+    {
+      "ref": "ansi-styles@npm:4.3.0",
+      "dependsOn": [
+        "color-convert@npm:2.0.1"
+      ]
+    },
+    {
+      "ref": "supports-color@npm:7.2.0",
+      "dependsOn": [
+        "has-flag@npm:4.0.0"
+      ]
+    },
+    {
+      "ref": "has-flag@npm:4.0.0"
+    },
+    {
+      "ref": "color-convert@npm:2.0.1",
+      "dependsOn": [
+        "color-name@npm:1.1.4"
+      ]
+    },
+    {
+      "ref": "color-name@npm:1.1.4"
+    },
+    {
+      "ref": "fast-json-stable-stringify@npm:2.1.0"
+    },
+    {
+      "ref": "json-schema-traverse@npm:0.4.1"
+    },
+    {
+      "ref": "uri-js@npm:4.4.1",
+      "dependsOn": [
+        "punycode@npm:2.3.1"
+      ]
+    },
+    {
+      "ref": "punycode@npm:2.3.1"
+    },
+    {
+      "ref": "@humanfs/core@npm:0.19.1"
+    },
+    {
+      "ref": "@humanwhocodes/retry@npm:0.3.1"
+    },
+    {
+      "ref": "globals@npm:14.0.0"
+    },
+    {
+      "ref": "import-fresh@npm:3.3.0",
+      "dependsOn": [
+        "parent-module@npm:1.0.1",
+        "resolve-from@npm:4.0.0"
+      ]
+    },
+    {
+      "ref": "js-yaml@npm:4.1.0",
+      "dependsOn": [
+        "argparse@npm:2.0.1"
+      ]
+    },
+    {
+      "ref": "strip-json-comments@npm:3.1.1"
+    },
+    {
+      "ref": "argparse@npm:2.0.1"
+    },
+    {
+      "ref": "parent-module@npm:1.0.1",
+      "dependsOn": [
+        "callsites@npm:3.1.0"
+      ]
+    },
+    {
+      "ref": "resolve-from@npm:4.0.0"
+    },
+    {
+      "ref": "callsites@npm:3.1.0"
+    },
+    {
+      "ref": "@eslint/object-schema@npm:2.1.5"
+    },
+    {
+      "ref": "is-odd@npm:0.1.2",
+      "dependsOn": [
+        "is-number@npm:3.0.0"
+      ]
+    },
+    {
+      "ref": "is-number@npm:3.0.0",
+      "dependsOn": [
+        "kind-of@npm:3.2.2"
+      ]
+    },
+    {
+      "ref": "kind-of@npm:3.2.2",
+      "dependsOn": [
+        "is-buffer@npm:1.1.6"
+      ]
+    },
+    {
+      "ref": "is-buffer@npm:1.1.6"
+    }
+  ]
+}
